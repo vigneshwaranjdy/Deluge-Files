@@ -1,0 +1,142 @@
+EXERSICE TWO
+
+// Type Here
+// 1. Write a Deluge Script to check whether a number is negative, positive, or zero.
+
+// sum = 0;
+// // code
+// if ( 0 = sum ) 
+// {
+// 	info "is Zero" + sum ;
+// }
+// else if ( sum > 0) 
+// {
+// 	info "is Posittive" + sum ;
+
+// }
+// else if ( sum < 0) 
+// {
+// 	info "is Negative" + sum ;
+// }
+
+
+// 2 Write a Deluge Script to check whether a number is divisible by 5 or 11 or not.
+
+// num = 55;
+
+// if ( num % 5 == 0) 
+// {
+// 	info "the number is divisible :" + num ;
+// }
+
+// else if ( num % 11 ==0 ) 
+// {
+// 	info "the number is divisible " + num ;
+// }
+
+// else 
+// {
+// 	info "is not" ;
+// }
+
+// 3 Write a Deluge Script to check whether a number is even or odd.
+
+// mr_wick = 7;
+
+// if ( mr_wick % 2 == 0 ) 
+// {
+// 	info "is even :" + mr_wick ;
+// }
+
+// else 
+// {
+// 	info "is odd :" ;
+// }
+
+// 4 Write a Deluge Script to check whether a year is a leap year or not.
+
+// year = 2013;
+
+// if ( year % 4 == 0 ) 
+// {
+// 	if ( year % 100 == 0 ) 
+//     {
+// 		if ( year % 400 == 0 ) 
+//         {
+// 			info "is leap year :" + year ;
+//         }
+// 		else 
+//         {
+// 			info "not a leap year" ;
+//         }
+//     }
+// 	else 
+//     {
+// 		info "is a leap year" ;
+//     }
+// }
+// else 
+// {
+// 	info "not a leap year" ;
+// }
+
+
+// 5.
+// char = "7";
+
+// if (char.matches("[a-z A-Z]"))
+// {
+// 	info "is an alphabet : " + char ;
+// }
+// 	else 
+//     {
+// 		info "is not " ;
+//     }
+
+/ 6.Write a Deluge Script to input any alphabet and check whether it is vowel or consonant. 
+
+// char ="u";
+// if (char.contains("a")||char.contains("e")||char.contains("i")||char.contains("o")||char.contains("u")) 
+// {
+// 	info "is an vowel : " + char ;
+// }
+// else 
+// {
+// 	info "is an consonent" ;
+// }
+
+
+// 7.Write a Deluge Script to input any character and check whether it is an alphabet, digit, or special character. 
+
+// char = "A";
+// if (char.matches("[a-z A-Z]")) 
+// {
+// 	info "is an alphabet : " + char ;
+// }
+// else if (char.matches("[0-9]")) 
+// {
+// 	info "is an number : " + char ;
+// }
+// else 
+// {
+// 	info "is an special character" ;
+// }
+
+
+// 8.Initialize a variable with a date value and print it.
+
+date = "o1-Oct-2004";
+info date ;
+
+// 9.Initialize a variable with a date & time value and print it.
+
+dat_time = "26-jul-2025 , 11:40";
+info dat_time ;
+
+// 10 Compute the square of a given number and print it.
+
+size = 6;
+sum = size * size;
+info "given size : " + size ;
+info "square is : " + sum ;
+

@@ -1,0 +1,114 @@
+// 1.Write a deluge script to create a new list, add some colors (string) and print out the collection. 
+
+new_list = {"red","green","yellow"};
+new_list.add("blue");
+info new_list ;
+
+
+// 2. Write a deluge script to iterate through all elements in a list.
+
+numbers = {"12","13","14","15","16"};
+for each number in numbers
+{
+	info number ;
+}
+
+// 3. Write a deluge script to search an element in a list.
+
+names = {"vignesh","prem","nava","kavi"};
+unique = "prem";
+if ( unique.contains("prem") ) 
+{
+	info unique ;
+}
+
+// 4. Write a deluge script to remove the third element from a list.
+
+name = {"vignesh","kavi","prem","sara"};
+part = name.remove(2);
+info name ;
+
+// 5.Write a deluge script to print all the elements of a List using the position of the elements.  
+
+// name = {"nava","queen","mary","diva","honey"};
+
+// for each ring in name
+// {
+// 	info ring ;
+// }
+
+// name = {"nava","queen","mary","diva","honey"};
+
+// for each index ring in name
+// {
+// 	info ring ;
+// }
+
+// 5.Write a deluge script to print all the elements of a List using the position of the elements.  
+
+name = {"nava","queen","mary","diva","honey"};
+
+for each ring in name
+{
+	a = name.indexOf(ring);
+    info a+  "  = :" + ring ;
+}
+
+// 6.Write a deluge script to find whether the number is divisible by 5 or not from the given 
+// list. Marks= {90,65,23,90,34}
+
+// mark = {90,65,23,90,34};
+// for each n in mark
+// {
+// if ( n%5 == 0 ) 
+// {
+// 	info "divisable : " + n ;
+// }
+// else 
+// {
+// 	info " not divisable : " + n ;
+// }
+// }
+
+// 7.Write a deluge script to remove the duplicate value and print each element in 
+// lowercase from the given list. Flowers= {rose, lotus, lily, Jasmine, lily,sun flower} 
+
+flowers = {"Rose","lotus","lilly","jasmine","lilly","sun flower"};
+var = flowers.distinct();
+
+for each doop in var
+{
+info doop.lower() ;
+}
+
+// 8.Write a deluge script to find the absolute value for the given list.  Numbers={123.5, 789.90, 876.65, 8976.76}
+
+numbers = {123.5, 789.90, 876.65, 8976.76};
+for each clear in numbers
+{
+	b = clear.round(0);
+info b ;
+}
+
+// 9. write a deluge script to write the given number into Ascending order. 
+// Numbers_list= {87,90,67,23,56,90,65,90}
+
+list = {87,90,67,23,56,90,65,90};
+a=list.sort();
+info a ;
+
+// 10. write a deluge script to find the even and odd numbers from a list. 
+// List= {12,11,22,77,3433,90}
+
+List= {12,11,22,77,34,33,90};
+for each n in List
+{
+	if ( n%2 == 0 ) 
+    {
+		info " even numbers : " + n ;
+    }
+	else 
+    {
+		info " odd nmbers : " + n ;
+    }
+}

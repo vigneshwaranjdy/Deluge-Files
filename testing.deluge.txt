@@ -1,0 +1,150 @@
+// Type Here
+// 1. Write a program to perform addition, subtraction, multiplication, and division of any two numbers.
+
+// a=15;
+// b=20;
+
+// add = a + b;
+// info "Add:" + add ;
+
+// sub = a - b;
+// info "Sub:" + sub ;
+
+// multi = a * b;
+// info "Multi:" + multi;
+
+// div = a / b;
+// info "Divide:" + div ;
+
+// Find the area and perimeter of a square
+// size = 5;
+// area = size * size;
+// perimeter = 4 * size;
+// info "Area of square :" + area ;
+// info "Perimetter of square :" + perimeter ;
+
+
+// 3 Find the area and circumference of a circle
+// width = 20;
+// height = 30;
+
+// radius = 35;
+// area = width * height;
+// circumference = 2 * (3.141 * radius);
+
+// info "circumference of circle:"  + circumference ;
+// info "area of circle:"  + area ;
+
+// 4 Find the area and perimeter of a rectangle
+
+// length = 10;
+// breadth = 15;
+ 
+// area = length * breadth;
+// perimeter = 2 * (length + breadth);
+//  info "Area of rec :" + area ;
+// info "Perimeter of rec :" + perimeter ;
+
+// 5 Find the remainder for the given problem  144÷7
+
+// a=144;
+// b=7;
+// divide = a % b;
+// info "remainder :" + divide ;
+
+
+
+// 6 Find the quotient for the given problem 234÷6
+
+// divide1=234;
+// divide2=23;
+// quotient = divide1 % divide2;
+// info "Quotient" + quotient ;
+
+// 7 Find the square of any number
+
+// size = 6;
+// area = size * size;
+// info "square vaue" + area ;
+
+// 8 Write a Deluge script to find the maximum between two numbers.
+
+// a = 5;
+// b = 10;
+// maximum = max (a , b);
+// info maximum ;
+
+8
+
+a=5;
+b=1=;
+ if (a>b)
+{
+info "A is greater then B :" + a;
+}
+
+else 
+{
+info "B is greater then A :" + b:
+}
+
+
+// 9 Write a Deluge Script to find the maximum between three numbers.
+
+
+// a = 10;
+// b = 20;
+// max = 0;
+
+// if (a >= b)
+// {
+//     max = a;
+// }
+// else
+// {
+//     max = b;
+// }
+
+// info "Maximum is: " + max;
+
+
+// 9 Write a Deluge Script to find the maximum between three numbers.
+
+// max1=234;
+// max2=342;
+// max3=543;
+
+// if ( max1 > max2 && max1 > max3 ) 
+// {
+// 	info "Max1 is greater :" + max1 ;
+// }
+
+// else if ( max2 > max3 && max2 > max1 ) 
+// {
+// 	info "Max2 is greater :" + max2 ;
+// }
+
+// else if ( max3 > max1 && max3 > max2 ) 
+// {
+// 	info "Max3 is greater :" + max3 ;
+// }
+
+// 10 write a deluge script to check whether the given input "Elephant" has a vowel or not.
+
+
+
+// word = "elephant";
+
+// vowels = {"a","e","i","o","u"};
+// for each vowel in vowels
+// {
+// 	if(word.contains(vowel)) 
+//     {
+// 		info "Vowels present in the word " + vowel ;
+//     }
+// 	else 
+//     {
+// 		info "Vowels are not present" ;
+//     }
+// }
+

@@ -1,0 +1,436 @@
+fibonacci series
+
+list = {1,2,3,4,5,6,7,8,9,10};
+a = 0;
+b = 1;
+
+info a ;
+info b ;
+for each act in list
+{
+	num = a + b;
+	info num ;
+	
+	a = b;
+	b = num;
+}
+
+
+// tables
+
+list = {1,2,3,4,5,6,7,8,9,10};
+mul = 10;
+
+for each var in list
+{
+	cal = var*mul;
+	info var + "*" + mul + "=" + cal;
+}
+
+
+n=100;
+dyn_lst= " ".leftPad(n).toList("");
+i = 1;
+for each  number in dyn_lst
+{
+    
+// 	info i;
+	
+		if ( i%3 == 0 && i%5 == 0 )
+    {
+		info " divided by both : " + i ;
+	}
+	if ( i%3 == 0) 
+    {
+		info " dividedd by 3 : " + i ;
+    }
+	if ( i%5 == 0 ) 
+    {
+		info " divided by 5 : " + i ;
+    }
+	else 
+    {
+		info " not divisible : " + i ;
+    }
+
+	i = i+1;
+// }
+	
+}
+
+
+name ={"nava","hema","kavi","prem"};
+count = 0;
+
+for each cand in name
+{
+	info count + " : "+ cand;
+	count = count+1;	
+}
+
+
+
+n=100;
+dyn_lst= " ".leftPad(n).toList("");
+i = 1;
+for each  number in dyn_lst
+{
+    
+	info i;
+	
+		if ( i%3 == 0 && i%5 == 0 )
+    {
+		info " divided by both : " + i ;
+	}
+	if ( i%3 == 0) 
+    {
+		info " dividedd by 3 : " + i ;
+    }
+	if ( i%5 == 0 ) 
+    {
+		info " divided by 5 : " + i ;
+    }
+// 	else 
+//     {
+// 		info " not divisible : " + i ;
+//     }
+
+	i = i+1;
+// }
+	
+}
+
+// Type Here
+n=100;
+dyn_lst= " ".leftPad(n).toList("");
+i = 1;
+for each  number in dyn_lst
+{
+    
+	info i;
+	
+		if ( i%3 == 0 && i%5 == 0 )
+    {
+		info " divided by both : " + i ;
+	}
+	if ( i%3 == 0) 
+    {
+		info " dividedd by 3 : " + i ;
+    }
+	if ( i%5 == 0 ) 
+    {
+		info " divided by 5 : " + i ;
+    }
+	if(!(i%3==0 ||i% 5==0|| i%3==0 && i%5==0)) 
+    {
+		info " not divisible : " + i ;
+    }
+
+	i = i+1;
+// }
+	
+}
+
+
+num = {5,2,10,12,-10,8,4,-5,9,-3,11};
+empty1 = {};
+empty2 = {};
+empty3 = {};
+
+for each number in num
+{
+	if ( number < 0 ) 
+    {
+		empty1.add(number);
+    }
+	else if ( number%2 == 0 ) 
+    {
+		empty2.add(number);
+    }
+	else 
+    {
+		empty3.add(number);
+    }
+}
+info " Negative number = {" + empty1 + "}";
+info " even number = {" + empty2 + "}";
+info " odd number = {" + empty3 + "}";
+
+
+name={"sathya":87,"vicky":67,"prem":97,"luffy":77,"zoro":99};
+for each a in name.keys()
+{
+	b=name.get(a);
+	info a.keys()+"::"+b ;
+}
+
+
+
+
+val = {
+	{"prodct_name":"apple","quanty":30},
+		{"prodct_name":"orange","quanty":1000},
+			{"prodct_name":"graph","quanty":60},
+				{"prodct_name":"pineapple","quanty":300}
+};
+quantityList = {};
+count = 0;
+for each fruit in val
+{
+	mp = map();
+// 	mp.put(fruit.get("prodct_name"), fruit.get("quanty"));
+// 		quantityList.add(mp);
+// 	info "lis = " + quantityList;
+	if(count < fruit.get("quanty"))
+	{
+		dupList = quantityList;
+		quantityList.clear();
+		mp.put(fruit.get("prodct_name"), fruit.get("quanty"));
+		quantityList.add(mp);
+		quantityList.addall(dupList);
+		
+	}
+	else 
+    {
+// 		dupList = quantityList;
+// 		quantityList.clear();
+		mp.put(fruit.get("prodct_name"), fruit.get("quanty"));
+		quantityList.add(mp);
+// 		quantityList.addall(dupList);
+		
+    }
+	count = fruit.get("quanty");
+
+
+
+num = 153;
+new = num.toList("");
+size = new.size();
+i = 0;
+
+for each n in new
+{
+	sqrt = n.power(size);
+	i = i + sqrt;
+}
+info i ;
+
+if ( i == num ) 
+{
+	info "amstrong" ;
+}
+
+else 
+{
+	info "not" ;
+}
+
+
+ascending
+
+
+Int = {22,44,3,45,78,999,99};
+mt = {};
+for each num in Int
+{
+	max = 1000;
+	for each new in Int
+    {
+		if ( new < max ) 
+        {
+			max=new;
+        }
+    }
+	mt.add(max);
+	Int.removeElement(max);
+}
+info mt ;
+
+
+
+
+descending
+
+
+
+Int = {22,44,3,45,78,999,99};
+mt = {};
+for each num in Int
+{
+	max = 0;
+	for each new in Int
+    {
+		if ( new > max ) 
+        {
+			max=new;
+        }
+    }
+	mt.add(max);
+	Int.removeElement(max);
+}
+info mt ;
+
+
+
+map_map = {101:{"Name":"vicky","Age":20},102:{"Name":"giri","Age":19}};
+get_key = map_map.keys();
+info map_map.get(get_key.get(0)).get("Name") ;
+
+
+
+
+map_map = 
+{101:{"Name":"vicky","Age":20,"Order":"pizza","amount":1000,"Date":'10-Aug-2025'},
+102:{"Name":"giri","Age":19,"Order":"burger","amount":900,"Date":'5-jan-2025'},
+103:{"Name":"sathya","Age":23,"Order":"biriyani","amount":400,"Date":'12-feb-2025'},
+104:{"Name":"prem","Age":24,"Order":"combo","amount":500,"Date":'25-apr-2025'}};
+get_key = map_map.keys();
+info map_map.get(get_key.get(0)).get("Name") ;
+info map_map ;
+for each new in map_map
+{
+	info new.get("Name") + " : " + new.get("Age") ;
+	info " Order : " + new.get("Order") ;
+	info " Amount : " + new.get("amount") ;
+	info " Date : " + new.get("Date") ;
+}
+
+
+
+
+
+
+
+name_list1 = {-52,-1,-4,5,9,66,-10,45,19,31,66};
+lst={};
+for each nn in name_list1
+{
+	max = name_list1.largest();
+	for each new in name_list1
+	{
+		if ( new < max ) 
+		{
+			max = new;
+			}
+		}
+			lst.add(max);
+			name_list1.removeElement(max);
+}
+info lst ;
+
+
+
+
+map_map = 
+{101:{"Name":"vicky","Age":20,"Order":"pizza","amount":1000,"Date":'10-Aug-2025'},
+102:{"Name":"giri","Age":19,"Order":"burger","amount":900,"Date":'5-jan-2025'},
+103:{"Name":"sathya","Age":23,"Order":"biriyani","amount":400,"Date":'12-feb-2025'},
+104:{"Name":"prem","Age":24,"Order":"combo","amount":500,"Date":'25-apr-2025'}};
+info " First map : " + map_map;
+info "****************************************" ;
+
+empt = {105:{"Name":"sam","Age":30,"Order":"barota","amount":100,"Date":'10-nov-2024'}};
+map_map.putall(empt) ;
+info " Updated info : " + map_map ;
+info ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ;
+
+get_key = map_map.keys();
+info map_map.get(get_key.get(0)).get("Name") ;
+info "++++++++++++++++++++++++++++++++++++++" ;
+
+info "Name : " +  map_map.get(get_key.get(0)).get("Name") ;
+info "Age : " + map_map.get(get_key.get(0)).get("Age") ;
+info "Order : " + map_map.get(get_key.get(0)).get("Order") ;
+info "Amount : " + map_map.get(get_key.get(0)).get("amount") ;
+info " Date : " + map_map.get(get_key.get(0)).get("Date") ;
+
+cct = map_map.get(get_key.get(0)) ;
+info "Name : " + cct.get("Name");
+info "Age : " + cct.get("Age") ;
+info "Order : " + cct.get("Order") ;
+info "Amount : " + cct.get("amount") ;
+info "Date : " + cct.get("Date") ;
+info "/////////////////////////////////////////////////////////" ;
+
+info " Total Info : " + map_map ;
+info "---------------------------------------------------------------" ;
+
+map_map.remove(102);
+info " Removed map : " + map_map;
+info "................................................." ;
+
+var = map_map.get(get_key.get(0));
+var.put("Order", "Biriyani");
+info "Updated order : "+ var;
+info "||||||||||||||||||||||||||||||||||||||||||||||||||||" ;
+
+for each new in map_map
+{
+	info new.get("Name") + " : " + new.get("Age") ;
+	info " Order : " + new.get("Order") ;
+	info " Amount : " + new.get("amount") ;
+	info " Date : " + new.get("Date") ;
+	info "=======================================" ;
+}
+
+
+
+
+// // Type Here
+// lux = {200:{"name":"Habibi","Age":22},102:{"name":"Lucky","Age":22}};
+// a = lux.keys().get(0);
+// info lux.get(a).get("name");
+// //info lux;
+// a = "hello";
+// b = a.toList();
+// info b;
+// new = "Hello World";
+//Question-- Hello 
+//Answer -- ifmmp
+// var = "hello";
+// final = List();
+// alp =["a","b","c","d","e","f","g","h","i","j","k","l","m",
+//  "n","o","p","q","r","s","t","u","v","w","x","y","z"];
+//  for each i in var.toList("")
+//  {
+// 	 if ( alp.contains(i) == true ) 
+//      {
+// 		 final.add(alp.get(alp.indexOf(i)+1));
+//      }
+//  }
+// info "Question: "+var;
+// info "Answer: "+ final.toString("");
+
+createmap = {101:{"Name":"Vicky","Age":21,"Food":"Rice"},
+102:{"Name":"Sam","Age":22,"Food":"Biriyani"},
+103:{"Name":"Randy","Age":20,"Food":"Veg"}};
+for each new in createmap
+{
+	info new ;
+}
+
+
+
+
+
+????
+
+
+// Step 1: Organization ID (from Zoho Books)
+org_id = "123456789"; // Replace with your actual Zoho Books org ID
+
+// Step 2: Get the Invoice ID from your form
+invoice_id = input.Books_Invoice_ID;
+
+// Step 3: Fetch the Invoice PDF from Zoho Books
+invoice_pdf = zoho.books.getFile(org_id, "invoices", invoice_id);
+
+// Step 4: Send Email with Invoice
+sendmail
+[
+    from       : zoho.adminuserid
+    to         : input.Customer_Email
+    subject    : "Your Bike Invoice from [Your Company Name]"
+    message    : "Dear " + input.Customer_Name + ",\n\nPlease find your invoice attached.\n\nThank you for choosing us!"
+    attachments : invoice_pdf
+];
