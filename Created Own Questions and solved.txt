@@ -1,0 +1,257 @@
+1.Remove Duplocate values in a list
+
+values = {"A","B","C","A","c","E"};
+unique_list = list();
+for each v in values
+{
+    if(!unique_list.contains(v.toUpperCase()))
+    {
+        unique_list.add(v.toUpperCase());
+    }
+}
+info unique_list ;
+
+2.find which letter has appeared more times
+
+name="vickyyyyyyy".tolist("");
+createmap=Map();
+for each var in name
+{
+	createmap.put(var,name.getOccurenceCount(var));
+}
+b= createmap.sort(false).keys().get(0) ;
+info b+":"+createmap.get(b) ;
+
+3.which word has long size
+
+createList={"hemanath","vicky","kavink"};
+createMap=Map();
+for each a in createList
+{
+	createMap.put(a, a.toList("").size());
+}
+info createMap.sort(false).keys().get(0) ;
+
+4.Palindrome
+
+var = "Madam".toLowerCase().toList("");
+new = var.size() -1;
+createList={};
+for each a in var
+{
+	createList.add(var.get(new));
+	new -= 1;
+}
+if (var == createList) 
+{
+	info true ;
+}
+else 
+{
+	info false ;
+}
+
+5.Rhombus made with stars(*).
+
+var = 4;
+count=var;
+loop="".leftPad(var).toList("");
+for each a in loop
+{
+	info "".leftPad(count).toList("").tostring("")+  " * ".repeat(var) ;
+	count -=1;
+}
+
+6.Prime Number
+
+number=1047;
+count=1;
+answer_Count=0;
+leftpad="".leftPad(number).toList("");
+for each rec in leftpad
+{
+	if ( number % count == 0 ) 
+    {	
+		answer_Count+=1;
+    }
+	count+=1;
+}
+if ( answer_Count >= 3 ) 
+{
+	info "This number is not prime";
+}
+else 
+{
+	info "this number is prime";
+}
+
+7.Flames
+
+First_name="vigneshwaran".toLowerCase().toList("");
+second_name="love".toLowerCase().toList("");
+flames={"friend","love","affection","marriage","enemy","sister"};
+flames_Count=flames.size();
+use="".leftPad(flames_Count).toList("");
+count=0;
+for each rec in First_name
+{
+		if (second_name.contains(rec)) 
+        {
+			First_name.removeElement(rec);
+			second_name.removeElement(rec);
+        }
+}
+var = First_name.size() + second_name.size();
+Total_count=var;
+for each lis2 in use
+{
+for each lis in flames
+{
+	if ( flames.size() > 1 ) 
+    {
+		count = (count + Total_count - 1) % flames.size();
+		flames.remove(count);
+    }
+}
+}
+info flames;
+
+
+8.Mid Prime Number
+
+first = 1000;
+add = 1500;
+var=first;
+loop="".leftPad(add).toList("");
+createList={};
+for each a in loop
+{   
+	var +=1;
+	if (var == add) 
+    {
+		break;
+    }
+	createList.add(var);
+}
+// info createList ;
+prime = {};
+for each i in createList
+{
+	if((i%2) == 0 || (i%3) == 0 || (i%5) == 0 || (i%7) == 0 || (i%11) == 0 || (i%13) == 0 || (i%17) == 0 || (i%19) == 0)
+    {
+// 		info "Not" ;
+    }
+	else 
+    {
+// 		info i ;
+		prime.add(i);
+    }
+}
+info prime ;
+
+9.find between number 
+
+first = 1000;
+add = 1500;
+var=first;
+loop="".leftPad(add).toList("");
+createList={};
+for each a in loop
+{   
+	var +=1;
+	if (var == add) 
+    {
+		break;
+    }
+	createList.add(var);
+}
+info createList ;
+
+add mid values
+
+
+10.Largest without using function
+
+createList={4,1,6,8,4,2};
+var=createList.get(0);
+for each i in createList
+{
+	if(i > var)
+	{
+		var = i;
+	}
+}
+info var ;
+
+11.second largest
+
+CreateList={100,25,300,52,60,65};
+count = 0;
+for each i in CreateList
+{
+	if(i > count)
+	{
+		count = i;
+	}
+}
+CreateList.removeElement(count);
+var=0;
+for each a in CreateList
+{
+	if(a > var)
+	{
+		var = a;
+	}
+}
+info var ;
+
+12.add month without using addmonth function
+
+dat = '12-09-2025';
+count = 10;
+a = "".leftPad(count).toList("");
+for each val in a
+{
+	info dat;
+	if (dat.month() == 1 || dat.month() == 3|| dat.month() == 5|| dat.month() == 7|| dat.month() == 8|| dat.month() == 10|| dat.month() == 12) 
+    {
+		daycount = 31;
+    }
+	else if (dat.month() == 2) 
+    {
+		a=dat.year();
+		c=4;
+		b=a.toNumber() % c;
+		if (b == 0) 
+        {
+			daycount = 29;
+        }
+		else 
+        {
+			daycount = 28;
+        }
+    }
+	else 
+    {
+		daycount = 30;
+    }
+	getday=dat.day();
+	if(getday < daycount)
+	{
+		day1 = daycount - getday;
+		getday = getday + day1;	
+		date2 = dat.addDay(getday);
+		dat = date2;
+	}
+}
+
+13.convert time type
+
+a=zoho.currenttime;
+converted = a.toString("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+info converted;
+
+14. For an input paragraph create a list with all the words in the paragraph using Deluge script.
+
+createList={"Hello this is Deluge script and I want to split this paragraph into words"};
+info createList.tocollection(" ") ;
